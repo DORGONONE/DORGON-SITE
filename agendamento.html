@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORGON - Agendamento</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #111;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .highlight {
+            color: #3b82f6;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .info-box {
+            background-color: #1a3a6c;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .info-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .info-list li span {
+            color: #4ade80;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .hours-box {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .hours-info {
+            margin-top: 20px;
+        }
+        .hours-info p {
+            margin: 10px 0;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .form-container {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            padding: 30px;
+            border: 1px solid #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #333;
+            background-color: #0f0f1e;
+            color: white;
+            font-size: 16px;
+        }
+        .radio-group {
+            margin-top: 10px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .radio-option input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">DORGON<span class="highlight"> - Qualidade e Tecnologia</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Agende seu Serviço</h1>
+        
+        <div class="grid-container">
+            <div>
+                <div class="info-box">
+                    <h2>Por que agendar com a DORGON?</h2>
+                    <ul class="info-list">
+                        <li><span>✓</span> Atendimento prioritário</li>
+                        <li><span>✓</span> Orçamento sem compromisso</li>
+                        <li><span>✓</span> Garantia em todos os serviços</li>
+                        <li><span>✓</span> Profissionais qualificados</li>
+                        <li><span>✓</span> Preços competitivos</li>
+                    </ul>
+                </div>
+                
+                <div class="hours-box">
+                    <h2>Horário de Atendimento</h2>
+                    <div class="hours-info">
+                        <p><strong>Segunda a Sexta:</strong> 08:00 - 18:00</p>
+                        <p><strong>Sábado:</strong> 08:00 - 12:00</p>
+                        <p><strong>Domingo:</strong> Fechado</p>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Contato Direto</h3>
+                        <p>Telefone: (46) 9999-9999</p>
+                        <p>Email: contato@dorgon.com.br</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <h2>Formulário de Agendamento</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Tipo de Serviço</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="manutencao" name="tipo_servico" value="manutencao" checked>
+                                <label for="manutencao">Manutenção</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="instalacao" name="tipo_servico" value="instalacao">
+                                <label for="instalacao">Instalação</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="consultoria" name="tipo_servico" value="consultoria">
+                                <label for="consultoria">Consultoria</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="outro" name="tipo_servico" value="outro">
+                                <label for="outro">Outro</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="data">Data Preferencial</label>
+                        <input type="date" id="data">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="descricao">Descrição do Serviço</label>
+                        <textarea id="descricao" rows="5" placeholder="Descreva o serviço que você precisa..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Solicitar Agendamento</button>
+                </form>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DORGON. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
