@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORGON - Produtos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #111;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .highlight {
+            color: #3b82f6;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .product-image {
+            height: 200px;
+            background-color: #2a2a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #3b82f6;
+        }
+        .btn-outline:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+        .featured-section {
+            margin-bottom: 60px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">DORGON<span class="highlight"> - Qualidade e Tecnologia</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Nossos Produtos</h1>
+        
+        <section class="featured-section">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Premium 1</h3>
+                        <p class="product-description">Produto de alta qualidade com garantia estendida</p>
+                        <p class="product-price">R$ 299,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Premium 2</h3>
+                        <p class="product-description">Solução completa para suas necessidades</p>
+                        <p class="product-price">R$ 349,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Todos os Produtos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Premium 1</h3>
+                        <p class="product-description">Produto de alta qualidade com garantia estendida</p>
+                        <p class="product-price">R$ 299,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Premium 2</h3>
+                        <p class="product-description">Solução completa para suas necessidades</p>
+                        <p class="product-price">R$ 349,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Standard 1</h3>
+                        <p class="product-description">Excelente custo-benefício para o dia a dia</p>
+                        <p class="product-price">R$ 199,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Standard 2</h3>
+                        <p class="product-description">Ideal para pequenas aplicações</p>
+                        <p class="product-price">R$ 149,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">Imagem do Produto</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produto Econômico</h3>
+                        <p class="product-description">Solução econômica com qualidade garantida</p>
+                        <p class="product-price">R$ 99,99</p>
+                        <a href="#" class="btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DORGON. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
