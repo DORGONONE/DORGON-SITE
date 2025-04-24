@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORGON - Depoimentos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #111;
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .highlight {
+            color: #3b82f6;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .testimonial-container {
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .testimonial-author h3 {
+            margin: 0 0 5px 0;
+            font-size: 22px;
+        }
+        .testimonial-author p {
+            margin: 0;
+            color: #999;
+            font-size: 16px;
+        }
+        .testimonial-date {
+            color: #999;
+            font-size: 14px;
+        }
+        .stars {
+            color: #ffc107;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .testimonial-text {
+            font-style: italic;
+            color: #ccc;
+            font-size: 18px;
+        }
+        .cta-box {
+            background-color: #1a3a6c;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+        }
+        .ratings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .rating-card {
+            background-color: #1a1a2e;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        .rating-card h3 {
+            margin-top: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">DORGON<span class="highlight"> - Qualidade e Tecnologia</span></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>O que nossos clientes dizem</h1>
+        
+        <p>
+            Na DORGON, valorizamos a opinião de nossos clientes. Confira abaixo alguns depoimentos 
+            de pessoas que confiaram em nossos serviços e produtos.
+        </p>
+        
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <h3>Carlos Silva</h3>
+                        <p>Capanema - PR</p>
+                    </div>
+                    <div class="testimonial-date">
+                        15/03/2025
+                    </div>
+                </div>
+                
+                <div class="stars">★★★★★</div>
+                
+                <p class="testimonial-text">"Excelente atendimento! O serviço foi realizado com rapidez e qualidade. Recomendo a todos que precisam de soluções confiáveis."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <h3>Maria Oliveira</h3>
+                        <p>Capanema - PR</p>
+                    </div>
+                    <div class="testimonial-date">
+                        02/04/2025
+                    </div>
+                </div>
+                
+                <div class="stars">★★★★★</div>
+                
+                <p class="testimonial-text">"Contratei a DORGON para um serviço complexo e fiquei impressionada com a eficiência e profissionalismo. Preço justo e trabalho impecável."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <h3>João Pereira</h3>
+                        <p>Planalto - PR</p>
+                    </div>
+                    <div class="testimonial-date">
+                        28/03/2025
+                    </div>
+                </div>
+                
+                <div class="stars">★★★★☆</div>
+                
+                <p class="testimonial-text">"Já utilizei os serviços várias vezes e sempre saio satisfeito. A equipe é muito atenciosa e os produtos são de alta qualidade."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <h3>Ana Souza</h3>
+                        <p>Pérola D'Oeste - PR</p>
+                    </div>
+                    <div class="testimonial-date">
+                        10/04/2025
+                    </div>
+                </div>
+                
+                <div class="stars">★★★★★</div>
+                
+                <p class="testimonial-text">"Ótimo custo-benefício! Fiz um orçamento em várias empresas e a DORGON ofereceu o melhor preço com a mesma qualidade."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <h3>Roberto Almeida</h3>
+                        <p>Capanema - PR</p>
+                    </div>
+                    <div class="testimonial-date">
+                        05/04/2025
+                    </div>
+                </div>
+                
+                <div class="stars">★★★★☆</div>
+                
+                <p class="testimonial-text">"Serviço entregue no prazo e conforme combinado. Profissionais muito capacitados e educados."</p>
+            </div>
+        </div>
+        
+        <div class="cta-box">
+            <h2>Compartilhe sua experiência</h2>
+            <p>
+                Sua opinião é muito importante para nós. Se você já utilizou nossos serviços ou produtos, 
+                gostaríamos de ouvir sobre sua experiência.
+            </p>
+            <a href="#" class="btn">Deixar um depoimento</a>
+        </div>
+        
+        <div style="text-align: center;">
+            <h2>Avaliações em Plataformas</h2>
+            <p>
+                Também estamos presentes em plataformas de avaliação. Confira nossas notas:
+            </p>
+            
+            <div class="ratings-grid">
+                <div class="rating-card">
+                    <h3>Google</h3>
+                    <div class="stars">★★★★★</div>
+                    <p>4.8/5 (32 avaliações)</p>
+                </div>
+                
+                <div class="rating-card">
+                    <h3>Facebook</h3>
+                    <div class="stars">★★★★★</div>
+                    <p>4.6/5 (18 avaliações)</p>
+                </div>
+                
+                <div class="rating-card">
+                    <h3>Instagram</h3>
+                    <div class="stars">★★★★★</div>
+                    <p>4.7/5 (25 avaliações)</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DORGON. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
